@@ -74,3 +74,5 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #    define RGB_MATRIX_MAXIMUM_BRIGHTNESS 180 // Limit to vendor-recommended value
 #endif
 
+#define IGNORE_MOD_TAP_INTERRUPT
+#define TAPPING_TERM_PER_KEY
