@@ -35,20 +35,9 @@ uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
     }
 };
 
-// RGB Layers
-const rgblight_segment_t PROGMEM my_capslock_layer[] = RGBLIGHT_LAYER_SEGMENTS(
-    {28, 1, HSV_RED}
-);
-
-const rgblight_segment_t* const PROGMEM my_rgb_layers[] = RGBLIGHT_LAYERS_LIST(
-    my_capslock_layer
-);
-
-void keyboard_post_init_user(void) {
-    rgblight_layers = my_rgb_layers;
-};
-
-bool led_update_user(led_t led_state) {
-    rgblight_set_layer_state(0, led_state.caps_lock);
-    return true;
-};
+// RGB Matrix Caps Lock indicator
+void rgb_matrix_indicators_advanced_user(uint8_t led_min, uint8_t led_max) {
+    if (host_keyboard_led_state().caps_lock) {
+        rgb_matrix_set_color(28, RGB_RED);
+     }
+}

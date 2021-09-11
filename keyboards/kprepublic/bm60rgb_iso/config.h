@@ -56,27 +56,45 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     // #define RGBLIGHT_SAT_STEP 8
     // #define RGBLIGHT_VAL_STEP 8
 #    define RGBLIGHT_LIMIT_VAL 180 // Limit to vendor-recommended value
-    #define RGBLIGHT_SLEEP  /* If defined, the RGB lighting will be switched off when the host goes to sleep */
+    // #define RGBLIGHT_SLEEP  /* If defined, the RGB lighting will be switched off when the host goes to sleep */
     /*== all animations enable ==*/
     //     #define RGBLIGHT_ANIMATIONS
     // /*== or choose animations ==*/
-    #define RGBLIGHT_EFFECT_BREATHING
+    //     #define RGBLIGHT_EFFECT_BREATHING
     //     #define RGBLIGHT_EFFECT_RAINBOW_MOOD
     //     #define RGBLIGHT_EFFECT_RAINBOW_SWIRL
     //     #define RGBLIGHT_EFFECT_SNAKE
-    #define RGBLIGHT_EFFECT_KNIGHT
+    //     #define RGBLIGHT_EFFECT_KNIGHT
     //     #define RGBLIGHT_EFFECT_CHRISTMAS
-    #define RGBLIGHT_EFFECT_STATIC_GRADIENT
+    //     #define RGBLIGHT_EFFECT_STATIC_GRADIENT
     //     #define RGBLIGHT_EFFECT_RGB_TEST
     //     #define RGBLIGHT_EFFECT_ALTERNATING
-    #define RGBLIGHT_EFFECT_TWINKLE
+    //     #define RGBLIGHT_EFFECT_TWINKLE
 #endif
 #ifdef RGB_MATRIX_ENABLE
-#    define RGB_MATRIX_MAXIMUM_BRIGHTNESS 180 // Limit to vendor-recommended value
+     #define RGB_MATRIX_TYPING_HEATMAP
+     #define RGB_MATRIX_MAXIMUM_BRIGHTNESS 180 // Limit to vendor-recommended value
+     #define DISABLE_RGB_MATRIX_ALPHAS_MODS
+     #define DISABLE_RGB_MATRIX_GRADIENT_UP_DOWN
+     #define DISABLE_RGB_MATRIX_GRADIENT_LEFT_RIGHT
+     #define DISABLE_RGB_MATRIX_BAND_SAT
+     #define DISABLE_RGB_MATRIX_BAND_VAL
+     #define DISABLE_RGB_MATRIX_BAND_PINWHEEL_SAT
+     #define DISABLE_RGB_MATRIX_BAND_PINWHEEL_VAL
+     #define DISABLE_RGB_MATRIX_BAND_SPIRAL_SAT
+     #define DISABLE_RGB_MATRIX_BAND_SPIRAL_VAL
+     #define DISABLE_RGB_MATRIX_CYCLE_ALL
+     #define DISABLE_RGB_MATRIX_CYCLE_LEFT_RIGHT
+     #define DISABLE_RGB_MATRIX_CYCLE_UP_DOWN
+     #define DISABLE_RGB_MATRIX_RAINBOW_MOVING_CHEVRON
+     #define DISABLE_RGB_MATRIX_CYCLE_OUT_IN
+     #define DISABLE_RGB_MATRIX_CYCLE_OUT_IN_DUAL
+     #define DISABLE_RGB_MATRIX_CYCLE_PINWHEEL
+     #define DISABLE_RGB_MATRIX_CYCLE_SPIRAL
+     #define DISABLE_RGB_MATRIX_DUAL_BEACON
+     #define DISABLE_RGB_MATRIX_RAINBOW_BEACON
+     #define DISABLE_RGB_MATRIX_RAINBOW_PINWHEELS
 #endif
 
 #define IGNORE_MOD_TAP_INTERRUPT
 #define TAPPING_TERM_PER_KEY
-#define RGBLIGHT_LAYERS
-#define RGBLIGHT_MAX_LAYERS 2
-#define RGBLIGHT_LAYERS_OVERRIDE_RGB_OFF
