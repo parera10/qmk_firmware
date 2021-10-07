@@ -38,3 +38,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define RGBLIGHT_SAT_STEP 15
 #define RGBLIGHT_VAL_STEP 18
 #define DYNAMIC_KEYMAP_LAYER_COUNT 3
+
+#define RGBLIGHT_LAYERS
+#define RGBLIGHT_LAYERS_OVERRIDE_RGB_OFF
