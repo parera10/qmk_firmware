@@ -21,3 +21,4 @@ RGB_MATRIX_ENABLE = yes     # RGB matrix lighting
 RGB_MATRIX_DRIVER = WS2812
 
 APPLE_FN_ENABLE = yes
+LAYOUTS = 60_iso
