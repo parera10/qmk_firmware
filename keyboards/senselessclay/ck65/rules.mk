@@ -18,3 +18,4 @@ RGBLIGHT_ENABLE = yes        # Enable keyboard RGB underglow
 AUDIO_ENABLE = no           # Audio output
 
 LAYOUTS = 65_iso
+APPLE_FN_ENABLE = yes
