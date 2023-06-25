@@ -49,3 +49,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #    define ENABLE_RGB_MATRIX_SOLID_REACTIVE_MULTIWIDE
 #    define ENABLE_RGB_MATRIX_MULTISPLASH
 #    define ENABLE_RGB_MATRIX_SOLID_MULTISPLASH
+
+// TAPPING
+#define HOLD_ON_OTHER_KEY_PRESS
