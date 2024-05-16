@@ -21,3 +21,6 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 #define LOCKING_SUPPORT_ENABLE
 /* Locking resynchronize hack */
 #define LOCKING_RESYNC_ENABLE
+
+// TAPPING
+#define HOLD_ON_OTHER_KEY_PRESS
